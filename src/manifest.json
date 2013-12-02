@@ -1,13 +1,14 @@
 {
-	"name": "CoffeeConsole",
-	"version": "0.0.3",
-	"description": "A CoffeeScript console within the Web Inspector.",
-	"devtools_page": "coffee.html",
+	"name": "ClojureScriptConsole",
+	"version": "0.0.1",
+	"description": "A ClojureScript console within the Web Inspector.",
+	"devtools_page": "cljs.html",
     "icons": { "128": "128.png" },
 	"minimum_chrome_version" : "18",
 	"permissions": [
 		"tabs",
 		"contextMenus" 
 	],
-	"manifest_version": 2
+	"manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
